@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let users=[
+    {fname: "abhi",lname: "shek", age: 26},
+    {fname: "pax",lname: "pipo", age: 36},
+    {fname: "rahul", lname: "jv", age: 50}
+    ]
+    
+    // let output=users.map(x=>x.fname+" "+x.lname);
+    
+    // console.log(output);
+    
+let output=users.filter(x=> x.age<36).map(x=> x.fname);
+
+console.log(output);
+/**let arr = ["java", "python", "javascript"];
+
+let output = arr.filter(item => item.includes("t"));
+
+console.log(output); **/
+
+    </script>
+</body>
+</html>
