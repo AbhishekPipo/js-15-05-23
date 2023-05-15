@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Higher Order Functions</h1>
+
+
+
+    <script>
+        const radius=[1,2,3,4];
+
+
+const area=function (radius){
+    return Math.PI * radius * radius;
+}
+
+let output=radius.map(area);
+console.log(output)
+
+
+const calculate=function (radius,logic){ //its like map function of my own
+    
+    let output=[];
+    for(let i=0;i<radius.length;i++){
+        output.push(logic(radius[i]));
+    }
+    
+    return output;
+}
+
+console.log(calculate(radius,area)); //higher order function
+    </script>
+</body>
+</html>
